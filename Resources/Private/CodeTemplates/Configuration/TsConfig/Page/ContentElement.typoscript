@@ -1,0 +1,12 @@
+#Product slider
+mod.wizards.newContentElement.wizardItems.provider.elements.###EXT_KEY###_###CE_TITLE### {
+    iconIdentifier = contentelement-###EXT_KEY###-###CE_TITLE###
+    title = LLL:EXT:###EXT_KEY###/Resources/Private/Language/Tca.xlf:contentelement.###CE_TITLE###.name
+    description = LLL:EXT:###EXT_KEY###/Resources/Private/Language/Tca.xlf:contentelement.###CE_TITLE###.description
+    tt_content_defValues {
+        CType = ###EXT_KEY###_###CE_TITLE###
+    }
+}
+mod.wizards.newContentElement.wizardItems.provider {
+    show := addToList(###EXT_KEY###_###CE_TITLE###)
+}

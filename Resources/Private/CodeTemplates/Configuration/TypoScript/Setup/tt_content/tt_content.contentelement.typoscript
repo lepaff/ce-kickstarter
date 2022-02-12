@@ -1,0 +1,4 @@
+tt_content.###EXT_KEY###_###CE_TITLE### =< lib.contentElement
+tt_content.###EXT_KEY###_###CE_TITLE### {
+    templateName = ###UC_CE_TITLE###
+}

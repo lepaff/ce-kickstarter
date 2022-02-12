@@ -1,0 +1,21 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+  LEPAFF\CeKickstarter\:
+    resource: '../Classes/*'
+
+  LEPAFF\CeKickstarter\Command\ExtensionCommand:
+    tags:
+      - name: 'console.command'
+        command: 'ce-kickstarter:extension'
+        description: 'Create a TYPO3 extension'
+        schedulable: false
+
+  LEPAFF\CeKickstarter\Command\ContentelementCommand:
+    tags:
+      - name: 'console.command'
+        command: 'ce-kickstarter:contentelement'
+        description: 'Create a TYPO3 content element'
+        schedulable: false

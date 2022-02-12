@@ -1,0 +1,4 @@
+#####################
+#### Setup Files ####
+#####################
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:###EXT_KEY###/Configuration/TypoScript/Setup/" extensions="typoscript">

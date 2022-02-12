@@ -1,0 +1,9 @@
+#############
+#### Mod ####
+#############
+
+#Add Content Elements
+mod.wizards.newContentElement.wizardItems.provider {
+    after = common
+    header = headerTitle @todo
+}

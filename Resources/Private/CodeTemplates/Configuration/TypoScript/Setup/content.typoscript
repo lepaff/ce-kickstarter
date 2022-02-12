@@ -1,0 +1,11 @@
+
+#################
+#### Content ####
+#################
+
+# Define the Template paths
+lib.contentElement {
+    templateRootPaths.180 = EXT:###EXT_KEY###/Resources/Private/Templates/ContentElements/
+    partialRootPaths.180 = EXT:###EXT_KEY###/Resources/Private/Partials/ContentElements/
+    layoutRootPaths.180 = EXT:###EXT_KEY###/Resources/Private/Layouts/ContentElements/
+}

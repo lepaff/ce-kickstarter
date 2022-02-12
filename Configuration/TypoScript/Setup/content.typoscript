@@ -1,0 +1,11 @@
+
+#################
+#### Content ####
+#################
+
+# Define the Template paths
+lib.contentElement {
+    templateRootPaths.180 = EXT:ce_kickstarter/Resources/Private/Templates/ContentElements/
+    partialRootPaths.180 = EXT:ce_kickstarter/Resources/Private/Partials/ContentElements/
+    layoutRootPaths.180 = EXT:ce_kickstarter/Resources/Private/Layouts/ContentElements/
+}
