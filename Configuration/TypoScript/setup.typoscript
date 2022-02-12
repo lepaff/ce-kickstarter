@@ -1,4 +1,0 @@
-#####################
-#### Setup Files ####
-#####################
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ce_kickstarter/Configuration/TypoScript/Setup/" extensions="typoscript">
