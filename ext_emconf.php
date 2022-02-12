@@ -6,11 +6,11 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'misc',
     'author' => 'Michael Paffrath',
     'author_email' => 'michael.paffrath@gmail.com',
-    'state' => 'stable',
-    'version' => '0.0.1',
+    'state' => 'beta',
+    'version' => '0.0.2',
     'constraints' => [
         'depends' => [
-            'typo3' => '10.4.0-10.4.99',
+            'typo3' => '10.4.0-10.4.99 || 11.5.4 - 11.5.99',
         ],
     ],
     'autoload' => [
