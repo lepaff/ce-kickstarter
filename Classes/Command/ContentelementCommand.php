@@ -174,7 +174,7 @@ class ContentelementCommand extends AbstractCommand
                 'CE_TITLE' => $contentElement,
                 'EXT_KEY' => $extensionKey
             ],
-            'addLine' => '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $extensionKey . parent::CONFIGURATION_DIRECTORY . parent::TSCONFIG_PAGE_DIRECTORY . ucfirst($extensionKey) . ucfirst($contentElement) . '.typoscript">'
+            'addLine' => '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $extensionKey . '/' . parent::CONFIGURATION_DIRECTORY . parent::TSCONFIG_PAGE_DIRECTORY . ucfirst($extensionKey) . ucfirst($contentElement) . '.typoscript">'
         ];
         if (!$this->createExtFile($io, $config)) {
             $io->error('Creating extension file "' . $config['filename'] . '" failed');
