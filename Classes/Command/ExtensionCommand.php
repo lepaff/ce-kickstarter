@@ -52,6 +52,12 @@ class ExtensionCommand extends AbstractCommand
             str_replace(['_', '-'], [], ucwords($packageName, '/-_'))
         );
 
+        $version = (string)$io->ask(
+            'Enter a version number',
+            null,
+            [$this, 'answerRequired']
+        );
+
         $availableTypo3Versions = [
             '^10.4' => 'TYPO3 v10 LTS',
             '^11.5' => 'TYPO3 v11 LTS',
@@ -82,6 +88,7 @@ class ExtensionCommand extends AbstractCommand
         $extension = (new Extension())
             ->setPackageName($packageName)
             ->setPackageKey($packageKey)
+            ->setVersion($version)
             ->setExtensionKey($extensionKey)
             ->setPsr4Prefix($psr4Prefix)
             ->setTypo3Versions($supportedTypo3Versions)

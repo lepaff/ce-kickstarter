@@ -36,6 +36,9 @@ class Extension implements \JsonSerializable
     protected $typo3Versions = [];
 
     /** @var string */
+    protected $version = [];
+
+    /** @var string */
     protected $description = '';
 
     /** @var string */
@@ -87,6 +90,12 @@ class Extension implements \JsonSerializable
         return $this;
     }
 
+    public function setVersion(string $version): self
+    {
+        $this->version = $version;
+        return $this;
+    }
+
     public function setDescription(string $description): self
     {
         $this->description = $description;
@@ -120,6 +129,7 @@ class Extension implements \JsonSerializable
             'name' => $this->packageName,
             'description' => $this->description,
             'type' => 'typo3-cms-extension',
+            'version' => $this->version,
             'license' => ['GPL-2.0-or-later'],
             'require' => [
                 'typo3/cms-core' => implode(' || ', $this->typo3Versions)
@@ -142,6 +152,7 @@ class Extension implements \JsonSerializable
         return [
             'title' => $this->extensionKey,
             'description' => $this->description,
+            'version' => $this->version,
             'constraints' => [
                 'depends' => [
                     'typo3' => $this->getTypo3Constraint(),
