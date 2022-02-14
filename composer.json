@@ -2,6 +2,7 @@
     "name": "lepaff/ce-kickstarter",
     "description": "A kickstarter for content elements",
     "type": "typo3-cms-extension",
+    "version": "0.0.2",
     "license": [
         "GPL-2.0-or-later"
     ],
